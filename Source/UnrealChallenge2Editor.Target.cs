@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class UnrealChallenge2EditorTarget : TargetRules
 {
-	public UnrealChallenge2EditorTarget( TargetInfo Target) : base(Target)
+	public UnrealChallenge2EditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V4;
