@@ -41,6 +41,7 @@ void UTP_WeaponComponent::Fire()
 			ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
 	
 			// Spawn the projectile at the muzzle
+			UE_LOG(LogTemp, Warning, TEXT("%s"), *ProjectileClass.Get()->GetName())
 			World->SpawnActor<AUnrealChallenge2Projectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
 		}
 	}
